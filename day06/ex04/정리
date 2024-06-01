@@ -1,0 +1,30 @@
+  Animal dog = new Animal();
+        dog.name = "Buddy";
+        dog.age = 5;
+        dog.address = "서울시 강남구";
+        dog.favFood = "개껌";
+
+        Animal cat = new Animal();
+        cat.name = "kitty";
+        cat.age = 3;
+        cat.address = "경기도 수원시";
+        cat.favFood = "참치";
+
+        Animal panda = new Animal();
+        panda.name = "Pan";
+        panda.age = 7;
+        panda.address = "강원도 평창군";
+        panda.favFood = "대나무";
+
+        Animal monkey = new Animal();
+        monkey.name = "Momo";
+        monkey.age = 4;
+        monkey.address = "제주도 서귀포시";
+        monkey.favFood = "바나나";
+
+        Animal[] animal = new Animal[]{dog, cat, panda, monkey};
+        for(Animal ani:animal) {
+            System.out.println("-----------------");
+            System.out.println("이름 : " + ani.name + "  나이 : " + ani.age);
+            System.out.println("주소 : " + ani.address + "  음식 : " + ani.favFood);
+        }
